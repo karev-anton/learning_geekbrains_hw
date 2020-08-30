@@ -29,17 +29,17 @@ public class Main {
         System.out.println("Step 3 Use this formula to calc result: a * (b + (c / d)): ");
         System.out.println("RESULT:" +result_c);
         System.out.println("");
-        System.out.println("RESULT: Is it correct that sum of this numbers between 10 and 20?: "+compare());
+        System.out.println("RESULT: Is it correct that sum of this numbers between 10 and 20?: "+isEqual());
         System.out.println("");
         Scanner input = new Scanner(System.in);
         System.out.println("Step 5, please enter the positive or negative number");
         var2 = input.nextInt();
-        checker_2(var2);
+        isNumberNegative2(var2);
         System.out.println("");
         Scanner input2 = new Scanner(System.in);
         System.out.println("Step 6, please enter the positive or negative number");
         var2 = input2.nextInt();
-        System.out.println("RESULT: Statement that this number negative is "+checker(var2));
+        System.out.println("RESULT: Statement that this number negative is "+isNumberNegative(var2));
         System.out.println("");
         System.out.println("Step 7, Enter your name, please: ");
         Scanner sc = new Scanner(System.in);
@@ -61,7 +61,7 @@ public class Main {
     }
 
     // step 4, compare result sum of two arguments
-    static boolean compare ()
+    static boolean isEqual ()
     {
        int num1;
        int num2;
@@ -79,7 +79,7 @@ public class Main {
        return compare_result;
     }
     // step 6, check negative or positive number entry
-    static boolean checker(int var2)
+    static boolean isNumberNegative(int var2)
     {
         boolean checker_result=false;
         if (var2<0)
@@ -90,7 +90,7 @@ public class Main {
     }
 
     // step5, print result after check number
-    static void checker_2(int var10)
+    static void isNumberNegative2(int var10)
     {
        if (var10<0)
        {
