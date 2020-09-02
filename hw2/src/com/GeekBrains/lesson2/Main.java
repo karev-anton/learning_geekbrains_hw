@@ -15,14 +15,7 @@ public class Main {
         while (counter<test_array.length)
 
         {
-            if (test_array[counter] ==0)
-            {
-                test_array[counter] =1;
-            }
-            else
-            {
-                test_array[counter] =0;
-            }
+            test_array[counter] =Math.abs(test_array[counter]-1);
             counter++;
         }
         System.out.println("Массив после модификации:"+ Arrays.toString(test_array)+"\n");
@@ -30,10 +23,10 @@ public class Main {
         // Задать пустой целочисленный массив размером 8. С помощью цикла заполнить его значениями 0 3 6 9 12 15 18 21;
         int[] test_array2 = new int[8];
         int i=0;
-        for  (int counter2 = 0; counter2<test_array2.length; counter2++)
+        for  (int counter2 = 1; counter2<test_array2.length; counter2++)
         {
-            test_array2[counter2]=i;
-            i+=3;
+            test_array2[counter2]=test_array2[counter2-1]+3;
+
         }
         System.out.println("Заполненный массив:"+ Arrays.toString(test_array2)+"\n");
 
