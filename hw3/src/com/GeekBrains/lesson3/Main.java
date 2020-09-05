@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    //test comment to check commit&push throw IDEA directly
     public static void main(String[] args) {
 
         int game_level=9;
