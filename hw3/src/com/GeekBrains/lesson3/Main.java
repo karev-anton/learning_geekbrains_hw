@@ -1,8 +1,6 @@
 package com.GeekBrains.lesson3;
 
-import com.sun.prism.shader.DrawEllipse_RadialGradient_PAD_Loader;
 
-import javax.sound.midi.SysexMessage;
 import java.util.Random;
 import java.util.Scanner;
 
